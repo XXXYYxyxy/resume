@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="贾玄烨的个人简历 - 西京学院机械制造及其自动化专业本科生，机械设计/制造方向，国家级竞赛奖项获得者">
+<meta name="keywords" content="贾玄烨,个人简历,机械设计,机械制造,西京学院,求职">
+<meta name="theme-color" content="#123c8f">
+<link rel="icon" type="image/jpeg" href="photo.jpg">
+<link rel="apple-touch-icon" href="photo.jpg">
+<link rel="preload" as="image" href="photo.jpg">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="贾玄烨 · 个人简历">
+<meta property="og:description" content="西京学院 · 机械制造及其自动化 · 2027届本科 | 求职意向：机械设计/制造 | 国家级竞赛奖项获得者">
+<meta property="og:image" content="https://xxxyyxyxy.github.io/resume/photo.jpg">
+<meta property="og:locale" content="zh_CN">
+<meta name="twitter:card" content="summary">
+<title>贾玄烨 · 个人简历</title>
+<style>
+  :root{
+    --bg:#f4f7fc; --bg2:#e9f0fa; --card:#ffffff; --text:#16233b; --muted:#5b6b84;
+    --accent:#1d5fd6; --accent-2:#0b9ed9; --border:#dfe7f2; --chip:#eef4fc;
+    --hero-from:#123c8f; --hero-to:#0b6fd0; --shadow:0 10px 30px rgba(23,64,138,.10);
+    --radius:16px;
+  }
+  [data-theme="dark"]{
+    --bg:#0b1222; --bg2:#0e1729; --card:#121c31; --text:#e6edf8; --muted:#93a3bd;
+    --accent:#5b93f7; --accent-2:#3fb7ef; --border:#223352; --chip:#1a2742;
+    --hero-from:#0d2f6e; --hero-to:#0a5fa8; --shadow:0 10px 30px rgba(0,0,0,.45);
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth;scroll-padding-top:76px}
+  body{
+    font-family:"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei","Noto Sans SC",sans-serif;
+    background:linear-gradient(180deg,var(--bg2),var(--bg) 320px);
+    color:var(--text);line-height:1.7;transition:background .3s,color .3s;
+  }
+  a{color:inherit;text-decoration:none}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+  /* ---------- 导航 ---------- */
+  header{
+    position:sticky;top:0;z-index:50;backdrop-filter:blur(14px);
+    background:color-mix(in srgb,var(--card) 82%,transparent);
+    border-bottom:1px solid var(--border);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;height:64px}
+  .brand{font-weight:800;font-size:1.06rem;letter-spacing:.5px;display:flex;align-items:center;gap:10px}
+  .brand .dot{
+    width:12px;height:12px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+    box-shadow:0 0 0 4px color-mix(in srgb,var(--accent) 18%,transparent);
+  }
+  .nav-links{display:flex;gap:4px;align-items:center}
+  .nav-links a{
+    padding:7px 12px;border-radius:9px;font-size:.9rem;color:var(--muted);transition:.2s;
+  }
+  .nav-links a:hover{color:var(--text);background:var(--chip)}
+  .nav-links a.active{color:var(--accent);background:var(--chip);font-weight:600}
+  #themeBtn{
+    border:1px solid var(--border);background:var(--card);color:var(--text);
+    width:36px;height:36px;border-radius:10px;cursor:pointer;display:grid;place-items:center;
+    transition:.2s;
+  }
+  #themeBtn:hover{border-color:var(--accent);color:var(--accent)}
+  .menu-btn{display:none;border:1px solid var(--border);background:var(--card);color:var(--text);
+    width:36px;height:36px;border-radius:10px;cursor:pointer;place-items:center}
+
+  /* ---------- Hero ---------- */
+  .hero{
+    background:
+      radial-gradient(900px 420px at 85% -10%,rgba(59,183,239,.35),transparent 60%),
+      radial-gradient(700px 400px at 8% 110%,rgba(29,95,214,.30),transparent 60%),
+      linear-gradient(135deg,var(--hero-from),var(--hero-to));
+    color:#fff;padding:86px 0 96px;position:relative;overflow:hidden;
+  }
+  .hero::after{
+    content:"";position:absolute;inset:0;opacity:.14;pointer-events:none;
+    background-image:radial-gradient(rgba(255,255,255,.55) 1px,transparent 1.4px);
+    background-size:26px 26px;
+  }
+  .hero .wrap{position:relative;z-index:2;display:flex;gap:48px;align-items:center;flex-wrap:wrap}
+  .avatar{
+    width:132px;height:132px;border-radius:34px;flex-shrink:0;object-fit:cover;
+    background:linear-gradient(135deg,rgba(255,255,255,.95),rgba(210,232,255,.9));
+    color:var(--hero-from);display:grid;place-items:center;
+    box-shadow:0 18px 40px rgba(3,20,60,.35);border:3px solid rgba(255,255,255,.5);
+  }
+  .hero h1{font-size:clamp(2rem,4.5vw,3rem);font-weight:800;letter-spacing:1px}
+  .hero .sub{margin-top:8px;font-size:1.05rem;color:rgba(255,255,255,.88)}
+  .hero .tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+  .hero .tags span{
+    padding:6px 14px;border-radius:999px;font-size:.86rem;
+    background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.32);backdrop-filter:blur(6px);
+  }
+  .hero .contact{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px}
+  .hero .contact a{
+    display:flex;align-items:center;gap:8px;padding:9px 16px;border-radius:12px;
+    background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);
+    font-size:.92rem;transition:.2s;
+  }
+  .hero .contact a:hover{background:rgba(255,255,255,.26);transform:translateY(-2px)}
+  .hero .contact svg{width:16px;height:16px;flex-shrink:0}
+
+  /* ---------- 通用 Section ---------- */
+  section{padding:72px 0 8px}
+  .sec-head{display:flex;align-items:center;gap:14px;margin-bottom:34px}
+  .sec-head .bar{width:5px;height:28px;border-radius:4px;background:linear-gradient(180deg,var(--accent),var(--accent-2))}
+  .sec-head h2{font-size:1.5rem;font-weight:800;letter-spacing:1px}
+  .sec-head .en{font-size:.78rem;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin-top:6px}
+  .card{
+    background:var(--card);border:1px solid var(--border);border-radius:var(--radius);
+    padding:26px;box-shadow:var(--shadow);transition:transform .25s,box-shadow .25s;
+  }
+  .card:hover{transform:translateY(-4px)}
+
+  /* ---------- 个人优势 ---------- */
+  .grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+  .strength .ico{
+    width:46px;height:46px;border-radius:13px;display:grid;place-items:center;margin-bottom:14px;
+    background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 14%,var(--card)),color-mix(in srgb,var(--accent-2) 14%,var(--card)));
+    color:var(--accent);
+  }
+  .strength .ico svg{width:24px;height:24px}
+  .strength h3{font-size:1.02rem;margin-bottom:8px}
+  .strength p{font-size:.9rem;color:var(--muted)}
+
+  /* ---------- 教育经历 ---------- */
+  .edu-row{display:flex;gap:18px;flex-wrap:wrap}
+  .edu-main{flex:1.35;min-width:300px}
+  .edu-side{flex:1;min-width:260px;display:flex;flex-direction:column;gap:18px}
+  .school{display:flex;align-items:center;gap:16px;flex-wrap:wrap;justify-content:space-between}
+  .school .name{font-size:1.18rem;font-weight:800}
+  .school .badge{
+    padding:5px 12px;border-radius:999px;font-size:.82rem;font-weight:600;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;
+  }
+  .meta-line{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .meta-line span{
+    background:var(--chip);color:var(--text);border:1px solid var(--border);
+    padding:6px 13px;border-radius:9px;font-size:.87rem;
+  }
+  .meta-line span b{color:var(--accent)}
+  .courses{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+  .courses span{
+    background:var(--chip);border:1px solid var(--border);padding:5px 12px;border-radius:999px;font-size:.85rem;
+  }
+  .stat-box{display:flex;align-items:center;gap:16px}
+  .stat-box .num{font-size:1.9rem;font-weight:800;background:linear-gradient(90deg,var(--accent),var(--accent-2));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat-box .lbl{font-size:.9rem;color:var(--muted)}
+
+  /* ---------- 竞赛经历 ---------- */
+  .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .award-card .top{display:flex;justify-content:space-between;align-items:flex-start;gap:10px}
+  .award-card h3{font-size:1.02rem;line-height:1.5}
+  .award-card .level{
+    flex-shrink:0;padding:4px 11px;border-radius:999px;font-size:.78rem;font-weight:700;white-space:nowrap;
+  }
+  .level.gold{background:#fff4d6;color:#a16207;border:1px solid #f0d98c}
+  .level.silver{background:#e8f2ff;color:#1d5fd6;border:1px solid #bcd4f7}
+  [data-theme="dark"] .level.gold{background:#3a2f10;color:#f5cf6a;border-color:#6b5a1c}
+  [data-theme="dark"] .level.silver{background:#122a52;color:#8db8ff;border-color:#2b4a80}
+  .award-card .role{font-size:.84rem;color:var(--accent);font-weight:600;margin:8px 0 10px}
+  .award-card ul{list-style:none}
+  .award-card li{font-size:.88rem;color:var(--muted);padding-left:16px;position:relative;margin-bottom:7px}
+  .award-card li::before{
+    content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  }
+
+  /* ---------- 项目亮点 ---------- */
+  .project{
+    border:1px solid var(--border);border-radius:20px;overflow:hidden;box-shadow:var(--shadow);
+    background:var(--card);
+  }
+  .project .head{
+    padding:26px 28px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;align-items:center;
+    background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 10%,var(--card)),color-mix(in srgb,var(--accent-2) 10%,var(--card)));
+    border-bottom:1px solid var(--border);
+  }
+  .project .head h3{font-size:1.22rem}
+  .project .head .meta{font-size:.87rem;color:var(--muted);margin-top:4px}
+  .project .head .tag{
+    padding:6px 14px;border-radius:999px;font-size:.84rem;font-weight:700;color:#fff;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  }
+  .project .body{padding:26px 28px}
+  .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:24px}
+  .stat{
+    text-align:center;padding:18px 10px;border-radius:14px;background:var(--chip);border:1px solid var(--border);
+  }
+  .stat .v{font-size:1.65rem;font-weight:800;background:linear-gradient(90deg,var(--accent),var(--accent-2));
+    -webkit-background-clip:text;background-clip:text;color:transparent}
+  .stat .u{font-size:.92rem;margin-left:2px;color:var(--accent);font-weight:700}
+  .stat .k{font-size:.8rem;color:var(--muted);margin-top:4px}
+  .project .body p{font-size:.94rem;margin-bottom:12px}
+  .project .body p b{color:var(--accent)}
+  .project .results{margin-top:18px;padding-top:18px;border-top:1px dashed var(--border)}
+  .project .results h4{font-size:.92rem;margin-bottom:10px;color:var(--accent);letter-spacing:1px}
+  .result-chips{display:flex;flex-wrap:wrap;gap:8px}
+  .result-chips span{
+    padding:7px 14px;border-radius:10px;font-size:.87rem;font-weight:600;
+    background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 12%,var(--card)),color-mix(in srgb,var(--accent-2) 12%,var(--card)));
+    border:1px solid color-mix(in srgb,var(--accent) 30%,var(--border));
+  }
+
+  /* ---------- 实习经历 ---------- */
+  .timeline{position:relative;padding-left:30px}
+  .timeline::before{
+    content:"";position:absolute;left:9px;top:6px;bottom:6px;width:2px;
+    background:linear-gradient(180deg,var(--accent),var(--accent-2));
+    opacity:.4;border-radius:2px;
+  }
+  .tl-item{position:relative;margin-bottom:22px}
+  .tl-item::before{
+    content:"";position:absolute;left:-30px;top:8px;width:20px;height:20px;border-radius:50%;
+    background:var(--card);border:4px solid var(--accent);
+  }
+  .tl-item .when{font-size:.82rem;color:var(--accent);font-weight:700}
+  .tl-item h3{font-size:1.1rem;margin:2px 0 2px}
+  .tl-item .pos{font-size:.88rem;color:var(--muted);margin-bottom:10px}
+  .tl-item ul{list-style:none}
+  .tl-item li{font-size:.9rem;color:var(--muted);margin-bottom:7px;padding-left:16px;position:relative}
+  .tl-item li::before{
+    content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;
+    background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  }
+  .tl-item .done{
+    margin-top:10px;padding:10px 14px;border-radius:10px;font-size:.88rem;
+    background:color-mix(in srgb,var(--accent) 8%,var(--card));border:1px dashed color-mix(in srgb,var(--accent) 40%,var(--border));
+  }
+
+  /* ---------- 专业技能 ---------- */
+  .skills{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .skill-card h3{display:flex;align-items:center;gap:10px;font-size:1rem;margin-bottom:14px}
+  .skill-card h3 .ico{
+    width:34px;height:34px;border-radius:9px;display:grid;place-items:center;flex-shrink:0;
+    background:linear-gradient(135deg,color-mix(in srgb,var(--accent) 15%,var(--card)),color-mix(in srgb,var(--accent-2) 15%,var(--card)));
+    color:var(--accent);
+  }
+  .skill-card h3 .ico svg{width:18px;height:18px}
+  .skill-tags{display:flex;flex-wrap:wrap;gap:7px}
+  .skill-tags span{
+    padding:5px 12px;border-radius:8px;font-size:.83rem;background:var(--chip);border:1px solid var(--border);
+  }
+  .skill-tags span.hot{color:var(--accent);border-color:color-mix(in srgb,var(--accent) 45%,var(--border));
+    background:color-mix(in srgb,var(--accent) 10%,var(--card));font-weight:600}
+  .skill-card .note{font-size:.83rem;color:var(--muted);margin-top:12px;border-top:1px dashed var(--border);padding-top:10px}
+
+  /* ---------- 荣誉 & 证书 ---------- */
+  .honor-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .honor-list{display:flex;flex-direction:column;gap:14px}
+  .honor-item{display:flex;gap:14px;align-items:flex-start}
+  .honor-item .ico{
+    width:40px;height:40px;border-radius:11px;flex-shrink:0;display:grid;place-items:center;color:#b8860b;
+    background:linear-gradient(135deg,#fff4d6,#ffe9a8);border:1px solid #f0d98c;
+  }
+  [data-theme="dark"] .honor-item .ico{background:linear-gradient(135deg,#3a2f10,#4a3a14);color:#f5cf6a;border-color:#6b5a1c}
+  .honor-item h3{font-size:.98rem;line-height:1.5}
+  .honor-item p{font-size:.84rem;color:var(--muted)}
+  .cert-card{display:flex;flex-direction:column;justify-content:center;align-items:flex-start;gap:6px}
+  .cert-card .big{font-size:1.05rem;font-weight:700}
+  .cert-card .small{font-size:.85rem;color:var(--muted)}
+
+  /* ---------- CTA / Footer ---------- */
+  .cta{
+    margin:60px 0 40px;border-radius:22px;padding:46px 30px;text-align:center;color:#fff;
+    background:
+      radial-gradient(700px 300px at 20% 0%,rgba(59,183,239,.4),transparent 60%),
+      linear-gradient(135deg,var(--hero-from),var(--hero-to));
+    box-shadow:var(--shadow);
+  }
+  .cta h2{font-size:1.5rem;margin-bottom:8px}
+  .cta p{color:rgba(255,255,255,.85);margin-bottom:22px}
+  .cta .btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+  .btn{
+    display:inline-flex;align-items:center;gap:8px;padding:12px 26px;border-radius:12px;font-size:.95rem;
+    font-weight:600;transition:.2s;cursor:pointer;border:none;
+  }
+  .btn.main{background:#fff;color:var(--hero-from)}
+  .btn.main:hover{transform:translateY(-2px);box-shadow:0 10px 24px rgba(0,0,0,.25)}
+  .btn.ghost{background:rgba(255,255,255,.14);color:#fff;border:1px solid rgba(255,255,255,.4)}
+  .btn.ghost:hover{background:rgba(255,255,255,.26)}
+  footer{
+    border-top:1px solid var(--border);padding:26px 0;text-align:center;
+    color:var(--muted);font-size:.86rem;
+  }
+  footer a{color:var(--accent)}
+
+  /* ---------- 动画 ---------- */
+  .reveal{opacity:0;transform:translateY(26px);transition:opacity .6s ease,transform .6s ease}
+  .reveal.show{opacity:1;transform:none}
+
+  /* ---------- 响应式 ---------- */
+  @media (max-width:960px){
+    .grid-4{grid-template-columns:1fr 1fr}
+    .grid-3{grid-template-columns:1fr}
+    .skills{grid-template-columns:1fr 1fr}
+    .honor-grid{grid-template-columns:1fr}
+    .stats{grid-template-columns:repeat(2,1fr)}
+  }
+  @media (max-width:640px){
+    .nav-links{display:none}
+    .menu-btn{display:grid}
+    .nav-links.open{
+      display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;gap:2px;padding:12px 18px;
+      background:var(--card);border-bottom:1px solid var(--border);box-shadow:var(--shadow);
+    }
+    .grid-4{grid-template-columns:1fr}
+    .skills{grid-template-columns:1fr}
+    .avatar{width:104px;height:104px;font-size:2.4rem;border-radius:26px}
+    section{padding-top:56px}
+  }
+
+  /* ---------- 打印 ---------- */
+  @media print{
+    header,.cta,footer{display:none!important}
+    body{background:#fff}
+    .hero{padding:40px 0;background:#123c8f!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    section{padding:30px 0 0}
+    .card,.project,.stat{border:1px solid #ccc;box-shadow:none}
+    .reveal{opacity:1!important;transform:none!important}
+    .project,.tl-item{break-inside:avoid}
+    a{color:inherit}
+  }
+</style>
+</head>
+<body>
+
+<!-- 导航 -->
+<header>
+  <div class="wrap nav">
+    <a class="brand" href="#home"><span class="dot"></span>贾玄烨 · 简历</a>
+    <nav class="nav-links" id="navLinks">
+      <a href="#strength">个人优势</a>
+      <a href="#edu">教育经历</a>
+      <a href="#competition">竞赛与项目</a>
+      <a href="#intern">实习经历</a>
+      <a href="#skills">专业技能</a>
+      <a href="#honor">荣誉证书</a>
+    </nav>
+    <div style="display:flex;gap:8px">
+      <button id="themeBtn" aria-label="切换主题" title="切换深/浅色主题">
+        <svg id="iconMoon" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+        <svg id="iconSun" width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display:none"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M2 12h2m16 0h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+      </button>
+      <button class="menu-btn" id="menuBtn" aria-label="菜单">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- Hero -->
+<div class="hero" id="home">
+  <div class="wrap">
+    <img class="avatar" src="photo.jpg" alt="贾玄烨">
+    <div style="flex:1;min-width:260px">
+      <h1>贾玄烨 <span style="font-size:.55em;font-weight:600;opacity:.8">JIA XUANYE</span></h1>
+      <p class="sub">西京学院 · 机械制造及其自动化 · 本科（2023–2027）</p>
+      <div class="tags">
+        <span>🎯 求职意向：机械设计 / 制造</span>
+        <span>📍 期望城市：西安</span>
+        <span>🎓 2027 届本科应届生</span>
+        <span>🏆 国家级竞赛奖项获得者</span>
+      </div>
+      <div class="contact">
+        <a href="tel:15332252803">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+          153 3225 2803
+        </a>
+        <a href="mailto:2078459060&#64;qq.com">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+          2078459060@qq.com
+        </a>
+        <a href="#edu">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 10-10-6L2 10l10 6 10-6v8"/><path d="M6 12.5V16a6 3 0 0 0 12 0v-3.5"/></svg>
+          西京学院
+        </a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- 个人优势 -->
+<section id="strength">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="bar" style="display:inline-block"></span></div>
+      <div><h2>个人优势</h2><div class="en">Strengths</div></div>
+    </div>
+    <div class="grid-4">
+      <div class="card strength reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"/></svg></div>
+        <h3>专业功底扎实</h3>
+        <p>机械专业在读，精通机械装配、机械原理等核心知识，兼具机电软硬件跨学科实操应用能力。</p>
+      </div>
+      <div class="card strength reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        <h3>项目带队经验</h3>
+        <p>牵头参与机械创新设计、大创、计算机设计等国家级、省级赛事并获奖，具备创新研发思维与统筹管理能力。</p>
+      </div>
+      <div class="card strength reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"/></svg></div>
+        <h3>软件技能全面</h3>
+        <p>熟练 SolidWorks、AutoCAD、Keil5、嘉立创 EDA，精通 3D 打印与 CNC 编程，另掌握 PS 与视频剪辑。</p>
+      </div>
+      <div class="card strength reveal">
+        <div class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"/></svg></div>
+        <h3>执行力强 · 踏实肯干</h3>
+        <p>做事严谨细致、学习领悟快、动手能力强，擅长把理论落地为成果，能快速适配工程技术岗位。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 教育经历 -->
+<section id="edu">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="bar" style="display:inline-block"></span></div>
+      <div><h2>教育经历</h2><div class="en">Education</div></div>
+    </div>
+    <div class="edu-row">
+      <div class="card edu-main reveal">
+        <div class="school">
+          <div class="name">西京学院</div>
+          <span class="badge">本科 · 2023 – 2027</span>
+        </div>
+        <div class="meta-line">
+          <span>专业：<b>机械制造及其自动化</b></span>
+          <span>学历：<b>本科（大四在读）</b></span>
+        </div>
+        <div class="courses">
+          <span>机械设计</span><span>机械原理</span><span>机械制造技术基础</span><span>单片机</span><span>机电传动控制</span>
+        </div>
+      </div>
+      <div class="edu-side">
+        <div class="card stat-box reveal">
+          <div class="num" data-count="30" data-suffix="%">0</div>
+          <div>
+            <div class="lbl" style="font-weight:700;color:var(--text)">专业排名</div>
+            <div class="lbl">前 30%</div>
+          </div>
+        </div>
+        <div class="card stat-box reveal">
+          <div class="num" data-count="3" data-suffix="+">0</div>
+          <div>
+            <div class="lbl" style="font-weight:700;color:var(--text)">国家级 / 省级竞赛奖项</div>
+            <div class="lbl">均担任核心成员或负责人</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 竞赛与项目 -->
+<section id="competition">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="bar" style="display:inline-block"></span></div>
+      <div><h2>竞赛与项目经历</h2><div class="en">Competitions &amp; Projects</div></div>
+    </div>
+    <div class="grid-3">
+      <div class="card award-card reveal">
+        <div class="top">
+          <h3>全国机械创新设计大赛</h3>
+          <span class="level gold">国家级奖项</span>
+        </div>
+        <div class="role">项目负责人</div>
+        <ul>
+          <li>带领团队完成需求分析、方案设计到样机组装全流程，主导关键机械结构设计</li>
+          <li>运用 SolidWorks / AutoCAD 完成三维建模、工程图绘制、运动仿真与强度校核</li>
+          <li>荣获国家级奖项，体现机械系统设计与实践能力</li>
+        </ul>
+      </div>
+      <div class="card award-card reveal">
+        <div class="top">
+          <h3>大学生创新创业大赛</h3>
+          <span class="level silver">省级奖项</span>
+        </div>
+        <div class="role">项目负责人</div>
+        <ul>
+          <li>组建跨专业团队，统筹项目计划、分工与进度管理，组织定期研讨与迭代优化</li>
+          <li>负责商业计划书撰写、财务预算及路演汇报，协调技术与市场资源</li>
+          <li>荣获省级奖项，锻炼团队协作与项目管理能力</li>
+        </ul>
+      </div>
+      <div class="card award-card reveal">
+        <div class="top">
+          <h3>计算机设计大赛</h3>
+          <span class="level silver">省级奖项</span>
+        </div>
+        <div class="role">跨学科开发</div>
+        <ul>
+          <li>结合机械专业知识与编程技能，开发交互式仿真系统</li>
+          <li>独立完成代码调试与多媒体素材整合，解决跨学科交叉问题</li>
+          <li>获得省级奖项，展现跨学科综合应用能力</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- 明星项目 -->
+    <div class="project reveal" style="margin-top:30px">
+      <div class="head">
+        <div>
+          <h3>🦋 基于蝴蝶运动形态的微型仿生扑翼飞行器</h3>
+          <div class="meta">项目负责人 · 2024.03 – 至今</div>
+        </div>
+        <span class="tag">明星项目</span>
+      </div>
+      <div class="body">
+        <div class="stats">
+          <div class="stat"><div class="v"><span class="n" data-count="360">0</span><span class="u">mm</span></div><div class="k">翼展</div></div>
+          <div class="stat"><div class="v"><span class="n" data-count="14.7" data-dec="1">0</span><span class="u">g</span></div><div class="k">整机重量</div></div>
+          <div class="stat"><div class="v"><span class="n" data-count="10">0</span><span class="u">min</span></div><div class="k">自由可控飞行</div></div>
+          <div class="stat"><div class="v"><span class="n" data-count="0.272" data-dec="3">0</span><span class="u">N</span></div><div class="k">实测升力</div></div>
+        </div>
+        <p>本团队设计了一款由<b>空心杯伺服电机</b>驱动的仿生蝴蝶微型飞行器，使用激光切割机制作翅膀模型，并结合多种材料与 <b>3D 打印工艺</b>实现零部件的制造与装配。</p>
+        <p>结合蝴蝶扑动特征，设计了<b>四空心杯伺服电机驱动的对称扑翼机构</b>，并模仿<b>蓝闪蝶</b>翅翼形状设计翼型。整机制造装配后经实验测试：升力 <b>0.272N</b>、拍打频率约 <b>5.0Hz</b>、最大拍打角 <b>136°</b>。在非极端条件下，本作品可完成室内盘旋飞行并进行实时航拍，飞行体态接近自然蝴蝶，具备极强的稳定性与机动灵活性。</p>
+        <div class="results">
+          <h4>🏅 项目业绩</h4>
+          <div class="result-chips">
+            <span>第十二届全国大学生机械创新设计大赛 · 省级一等奖</span>
+            <span>第十二届全国大学生机械创新设计大赛 · 国家级二等奖</span>
+            <span>大学生创新创业训练计划 · 省级项目</span>
+            <span>申请发明专利</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 实习经历 -->
+<section id="intern">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="bar" style="display:inline-block"></span></div>
+      <div><h2>实习经历</h2><div class="en">Internships</div></div>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal">
+        <div class="when">2026.07 – 2026.09</div>
+        <h3>陕西威尔机电科技有限公司</h3>
+        <div class="pos">组装工 · 精密测量设备装配与调试</div>
+        <ul>
+          <li>参与精密测量设备的装配、检验与调试，协助完成自动调心工作台、圆柱度测量设备的零部件组装，严格按工艺标准把控装配精度</li>
+          <li>负责工件圆柱度、圆度、粗糙度等几何公差检测，记录并整理质检数据</li>
+          <li>协助技术人员完成设备调试、精度校正与基础故障排查，熟悉精密机电设备生产流程</li>
+        </ul>
+        <div class="done">✅ 装配规范<b>零返工</b> · 遵守安全规范<b>零失误、零安全事故</b> · 实习结束取得<b>实习考核成绩证书</b></div>
+      </div>
+      <div class="tl-item reveal">
+        <div class="when">2025.06 – 2025.09</div>
+        <h3>中国一拖集团有限公司</h3>
+        <div class="pos">学徒工 · 生产认知实习</div>
+        <ul>
+          <li>开展为期两个月的认知实习，参观铸造、锻造、机加工、柴油机、拖拉机总装等车间</li>
+          <li>观摩拖拉机零部件加工、整机装配与自动化生产线流程，了解拖拉机制造工艺、生产管理及设备运行情况</li>
+          <li>将专业理论与工业实际相结合，加深对机械制造全流程的理解</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 专业技能 -->
+<section id="skills">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="bar" style="display:inline-block"></span></div>
+      <div><h2>专业技能</h2><div class="en">Skills</div></div>
+    </div>
+    <div class="skills">
+      <div class="card skill-card reveal">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3m0 12v3m9-9h-3M6 12H3m15.5-6.5-2 2m-9 9-2 2m13 0-2-2m-9-9-2-2"/><circle cx="12" cy="12" r="3"/></svg></span>设计与仿真</h3>
+        <div class="skill-tags">
+          <span class="hot">SolidWorks</span><span class="hot">AutoCAD</span><span>Keil5</span><span>嘉立创 EDA</span><span>Proteus 仿真</span>
+        </div>
+        <div class="note">具备电路设计与单片机开发基础</div>
+      </div>
+      <div class="card skill-card reveal">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"/><polyline points="8 6 2 12 8 18"/></svg></span>编程与建模</h3>
+        <div class="skill-tags">
+          <span>Python</span><span>C 语言</span><span>MATLAB</span>
+        </div>
+        <div class="note">可进行基础建模与分析，支撑跨学科开发</div>
+      </div>
+      <div class="card skill-card reveal">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 17l6-6 4 4 8-8"/><path d="M14 7h7v7"/></svg></span>加工与制造</h3>
+        <div class="skill-tags">
+          <span class="hot">3D 打印（前处理/参数调试/后处理）</span><span>CNC 编程</span><span>车 · 铣 · 刨 · 磨</span>
+        </div>
+        <div class="note">熟悉机械产品生产流程、质量管理体系及现场作业规范</div>
+      </div>
+      <div class="card skill-card reveal">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg></span>办公与文档</h3>
+        <div class="skill-tags">
+          <span>Word</span><span>Excel</span><span>PowerPoint</span>
+        </div>
+        <div class="note">擅长项目报告撰写、技术文档整理及答辩演示</div>
+      </div>
+      <div class="card skill-card reveal">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="4"/><circle cx="9" cy="9" r="2"/><path d="m21 15-3.5-3.5L8 21"/></svg></span>媒体与展示</h3>
+        <div class="skill-tags">
+          <span>Photoshop 图像处理</span><span>视频剪辑</span>
+        </div>
+        <div class="note">独立完成技术方案展示、项目宣传等素材制作</div>
+      </div>
+      <div class="card skill-card reveal">
+        <h3><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg></span>工程素养</h3>
+        <div class="skill-tags">
+          <span>严谨细致</span><span>执行力强</span><span>抗压能力好</span><span>团队协作</span>
+        </div>
+        <div class="note">长期主义，踏实肯干，快速适配各类工程技术岗位</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 荣誉与证书 -->
+<section id="honor">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div><span class="bar" style="display:inline-block"></span></div>
+      <div><h2>荣誉奖项 &amp; 资格证书</h2><div class="en">Honors &amp; Certificates</div></div>
+    </div>
+    <div class="honor-grid">
+      <div class="card reveal">
+        <h3 style="margin-bottom:16px">🏆 荣誉奖项</h3>
+        <div class="honor-list">
+          <div class="honor-item">
+            <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg></div>
+            <div>
+              <h3>第十二届全国大学生机械创新设计大赛 · 国家级二等奖</h3>
+              <p>项目负责人 · 另获陕西省省级一等奖</p>
+            </div>
+          </div>
+          <div class="honor-item">
+            <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg></div>
+            <div>
+              <h3>大学生创新创业训练计划 · 省级项目</h3>
+              <p>项目负责人 · 统筹运营与路演汇报</p>
+            </div>
+          </div>
+          <div class="honor-item">
+            <div class="ico"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M15.5 13 17 22l-5-3-5 3 1.5-9"/></svg></div>
+            <div>
+              <h3>计算机设计大赛 · 陕西省二等奖</h3>
+              <p>完成跨学科交互式仿真系统开发</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="card cert-card reveal">
+        <h3 style="margin-bottom:12px">📜 资格证书</h3>
+        <div class="big">🚗 机动车驾驶证 C1</div>
+        <div class="small">已取得机动车驾驶证，具备熟练驾驶能力</div>
+        <div style="margin-top:18px;padding-top:16px;border-top:1px dashed var(--border)">
+          <div class="big">🎓 西京学院 · 2027 届</div>
+          <div class="small">机械制造及其自动化 · 本科 · 专业排名前 30%</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<div class="wrap">
+  <div class="cta reveal">
+    <h2>期待与您合作，共创价值 🤝</h2>
+    <p>机械设计 / 制造方向 · 期望工作城市：西安 · 可立即到岗</p>
+    <div class="btns">
+      <a class="btn main" href="mailto:2078459060&#64;qq.com">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        发送邮件联系我
+      </a>
+      <a class="btn ghost" href="tel:15332252803">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+        拨打电话
+      </a>
+      <button class="btn ghost" onclick="window.print()">
+        <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 6 2 18 2 18 9"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        打印 / 导出 PDF
+      </button>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <div class="wrap">© 2026 贾玄烨 · 个人简历 · 西京学院 机械制造及其自动化<br>
+  联系电话 <a href="tel:15332252803">153 3225 2803</a> · 邮箱 <a href="mailto:2078459060&#64;qq.com">2078459060&#64;qq.com</a></div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------- 主题切换 ---------- */
+  const root = document.documentElement;
+  const themeBtn = document.getElementById('themeBtn');
+  const iconMoon = document.getElementById('iconMoon');
+  const iconSun = document.getElementById('iconSun');
+  function setTheme(t){
+    root.setAttribute('data-theme', t);
+    iconMoon.style.display = t === 'dark' ? 'none' : '';
+    iconSun.style.display = t === 'dark' ? '' : 'none';
+    try{ localStorage.setItem('resume-theme', t); }catch(e){}
+  }
+  const saved = (function(){ try{ return localStorage.getItem('resume-theme'); }catch(e){ return null; } })();
+  setTheme(saved || 'light');
+  themeBtn.addEventListener('click', () => {
+    setTheme(root.getAttribute('data-theme') === 'dark' ? 'light' : 'dark');
+  });
+
+  /* ---------- 移动端菜单 ---------- */
+  const menuBtn = document.getElementById('menuBtn');
+  const navLinks = document.getElementById('navLinks');
+  menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
+  navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
+
+  /* ---------- 滚动显现动画 ---------- */
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ e.target.classList.add('show'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+
+  /* ---------- 数字滚动 ---------- */
+  function animateCount(el){
+    const target = parseFloat(el.dataset.count);
+    const dec = parseInt(el.dataset.dec || '0', 10);
+    const dur = 1400, t0 = performance.now();
+    function frame(t){
+      const p = Math.min((t - t0) / dur, 1);
+      const eased = 1 - Math.pow(1 - p, 3);
+      el.textContent = (target * eased).toFixed(dec);
+      if(p < 1) requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }
+  const cio = new IntersectionObserver(entries => {
+    entries.forEach(e => { if(e.isIntersecting){ animateCount(e.target); cio.unobserve(e.target); } });
+  }, { threshold: 0.4 });
+  document.querySelectorAll('[data-count]').forEach(el => cio.observe(el));
+
+  /* ---------- 导航高亮 ---------- */
+  const sections = ['strength','edu','competition','intern','skills','honor']
+    .map(id => document.getElementById(id));
+  const links = document.querySelectorAll('.nav-links a');
+  const navObs = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if(e.isIntersecting){
+        links.forEach(a => a.classList.toggle('active', a.getAttribute('href') === '#' + e.target.id));
+      }
+    });
+  }, { rootMargin: '-40% 0px -55% 0px' });
+  sections.forEach(s => navObs.observe(s));
+})();
+</script>
+</body>
+</html>
